@@ -1,0 +1,110 @@
+.swal2-popup{
+    font-size: 1.6rem !important;
+}
+#product-package #header-text{
+    color: #00A499;
+    font-size: 1.6rem;
+}
+#product-package .shipping{
+    color: #FFF;
+    background: #00A499;
+}
+#product-package #variant-1-content .body{
+    display: flex;
+}
+#product-package #variant-1-content .meal-box{
+    display: grid;
+    width: 150px;
+    height: 140px;
+    background: url("https://dev.digitalfikirler.com/wellbox/images/box1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFF;
+    cursor: pointer;
+}
+#product-package #variant-1-content .meal-box.selected{
+    background: url("https://dev.digitalfikirler.com/wellbox/images/box1-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#product-package #variant-1-content .variant1-text{
+    height: fit-content;
+}
+#product-package #variant-1-content .variant1-text.top{
+    margin-top: 5rem;
+}
+#product-package #variant-1-content .variant1-text.bottom{
+    width: 90px;
+    margin-bottom: 3rem;
+}
+#product-package #variant-3-content .date-box,
+#product-package #variant-2-content .calorie-box{
+    width: 100%;
+}
+#product-package #variant-3-content .date-box > div,
+#product-package #variant-2-content .calorie-box > div{
+    display: grid;
+    width: 120px;
+    height: 90px;
+    background: url(https://dev.digitalfikirler.com/wellbox/images/box2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+#product-package #variant-3-content .date-box > div.selected,
+#product-package #variant-2-content .calorie-box > div.selected{
+    background: url(https://dev.digitalfikirler.com/wellbox/images/box2-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#product-package #variant-3-content .variant3-text.top,
+#product-package #variant-2-content .variant2-text.top{
+    color: #FFF;
+    margin-top: 1.3rem;
+}
+#product-package #delivery-time .input-group-addon,
+#product-package #delivery-date .input-group-addon{
+    font-size: 1.6rem;
+}
+.popover{
+    z-index: 9999 !important;
+}
+.datepicker{
+    z-index: 1!important;
+}
+.datepicker .disabled.day{
+    background: url("https://dev.digitalfikirler.com/wellbox/date-picker/times.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.font-size-2{
+    font-size: 2rem!important;
+}
+#product-package #display-results a{
+    height: 50px;
+    background: #00A499;
+}
+#calculator{
+    background: #EEEEEE;
+}
+#calculator button[type='submit']{
+    background: rgba(0, 165, 155, 0.5) !important;
+}
+#calculator button[type='submit']:hover{
+    background: rgba(0, 165, 155, 1) !important;
+}
+#calculator .products-header span:nth-child(1){
+    font-size: 4rem;
+}
+#calculator .products-header span:nth-child(2){
+    font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+    #product-package #variant-1-content .body{
+        display: grid !important;
+    }
+    #calculator .w-xs-75{
+        width: 75% !important;
+    }
+}
