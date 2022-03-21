@@ -61,15 +61,13 @@
 
         });
 
-        // https://www.fitchef.com.tr/tr/basic-paket/ example page
-
-        $.getJSON("https://www.thewellbox.com.tr/dosya/shipping.json", function(data){
+        $.getJSON("***/dosya/shipping.json", function(data){
 
             shipping = data;
             let variants;
 
             $(".product-area-bottom").after($(`<div class="container p-4" id="product-package"></div>`));
-            $("#product-package").load("https://dev.digitalfikirler.com/wellbox/form.package.php");
+            $("#product-package").load("***/wellbox/form.package.php");
 
             let interval;
             interval = setInterval(function(){
@@ -504,7 +502,7 @@
             $(".custom-form-wrapper").before($(`<form id="calculator" class="default-products popular-products my-5 py-5 d-flex flex-column align-items-center" onsubmit="return false;"></form>`))
 
         }
-            $("#calculator").load("https://dev.digitalfikirler.com/wellbox/form.calculator.php");
+            $("#calculator").load("***/wellbox/form.calculator.php");
 
     });
 
@@ -582,7 +580,7 @@
             
             trigger = true;
 
-            $(this).parents("form:eq(0)").attr("action", "https://dev.digitalfikirler.com/wellbox/mailer.php");
+            $(this).parents("form:eq(0)").attr("action", "***/wellbox/mailer.php");
             $(this).trigger("click");
 
         }
